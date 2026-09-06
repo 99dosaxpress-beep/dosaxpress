@@ -50,7 +50,7 @@ export const metadata: Metadata = {
     type: "website",
     images: [
       {
-        url: "/images/og-image.jpg",
+        url: "/images/seo.jpg",
         width: 1200,
         height: 630,
         alt: "99 Dosa Xpress South Indian Restaurant in Kolkata",
@@ -62,7 +62,7 @@ export const metadata: Metadata = {
     title: "99 Dosa Xpress | South Indian Restaurant in Sarsuna, Kolkata",
     description:
       "Freshly prepared Idli, Dosa, Vada & Uttapam made with authentic South Indian flavours in Sarsuna, Kolkata.",
-    images: ["/images/og-image.jpg"],
+    images: ["/images/seo.jpg"],
   },
   robots: {
     index: true,
