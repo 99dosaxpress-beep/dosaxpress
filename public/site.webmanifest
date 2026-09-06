@@ -1,0 +1,16 @@
+﻿{
+  "name": "99 Dosa Xpress",
+  "short_name": "99 Dosa Xpress",
+  "description": "Authentic South Indian Restaurant in Sarsuna, Kolkata",
+  "start_url": "/",
+  "display": "standalone",
+  "background_color": "#0D3823",
+  "theme_color": "#0D3823",
+  "icons": [
+    {
+      "src": "/icon.svg",
+      "sizes": "any",
+      "type": "image/svg+xml"
+    }
+  ]
+}
