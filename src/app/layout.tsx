@@ -32,7 +32,7 @@ export const metadata: Metadata = {
     "99 Dosa Xpress",
     "99 Dosa Xpress Kolkata",
     "Masala Dosa Sarsuna",
-    "Medu Vada Kolkata"
+    "Medu Vada Kolkata",
   ],
   authors: [{ name: "99 Dosa Xpress" }],
   creator: "99 Dosa Xpress",
@@ -75,11 +75,14 @@ export const metadata: Metadata = {
       "max-snippet": -1,
     },
   },
+  verification: {
+    google: "HyS-Y866vYJbT7kvHc1x2dhPhOQVdX3CoPC89WzE2KY",
+  },
   other: {
     "geo.region": "IN-WB",
     "geo.placename": "Kolkata",
     "geo.position": "22.4842;88.2917",
-    "ICBM": "22.4842, 88.2917",
+    ICBM: "22.4842, 88.2917",
   },
 };
 
