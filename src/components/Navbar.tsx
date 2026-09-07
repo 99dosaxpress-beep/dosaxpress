@@ -1,11 +1,11 @@
-﻿'use client';
+﻿"use client";
 
-import React, { useState, useEffect } from 'react';
-import Link from 'next/link';
-import { usePathname } from 'next/navigation';
-import { PhoneIcon, MenuIcon, CloseIcon, LeafIcon } from './icons';
-import { restaurantInfo } from '@/data/restaurantInfo';
-
+import React, { useState, useEffect } from "react";
+import Link from "next/link";
+import { usePathname } from "next/navigation";
+import { PhoneIcon, MenuIcon, CloseIcon, LeafIcon } from "./icons";
+import { restaurantInfo } from "@/data/restaurantInfo";
+import Image from "next/image";
 export default function Navbar() {
   const [isOpen, setIsOpen] = useState(false);
   const [scrolled, setScrolled] = useState(false);
@@ -15,40 +15,38 @@ export default function Navbar() {
     const handleScroll = () => {
       setScrolled(window.scrollY > 20);
     };
-    window.addEventListener('scroll', handleScroll);
-    return () => window.removeEventListener('scroll', handleScroll);
+    window.addEventListener("scroll", handleScroll);
+    return () => window.removeEventListener("scroll", handleScroll);
   }, []);
 
   const navLinks = [
-    { name: 'Home', href: '/' },
-    { name: 'Menu', href: '/menu' },
-    { name: 'About', href: '/about' },
-    { name: 'Contact', href: '/contact' },
+    { name: "Home", href: "/" },
+    { name: "Menu", href: "/menu" },
+    { name: "About", href: "/about" },
+    { name: "Contact", href: "/contact" },
   ];
 
   return (
-    <header className={`sticky top-0 z-40 w-full transition-all duration-300 ${
-      scrolled 
-        ? 'bg-[#0A2617]/95 backdrop-blur-md shadow-lg border-b border-[#D97706]/20 py-2.5' 
-        : 'bg-[#0D3823] border-b border-[#D97706]/15 py-3.5'
-    }`}>
+    <header
+      className={`sticky top-0 z-40 w-full transition-all duration-300 ${
+        scrolled
+          ? "bg-[#0A2617]/95 backdrop-blur-md shadow-lg border-b border-[#D97706]/20 py-0"
+          : "bg-[#0D3823] border-b border-[#D97706]/15 py-2.5"
+      }`}
+    >
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="flex items-center justify-between">
           {/* Logo Branding */}
           <Link href="/" className="flex items-center gap-3 group">
-            <div className="w-10 h-10 rounded-full bg-gradient-to-br from-[#D97706] to-[#B45309] flex items-center justify-center text-white shadow-md ring-2 ring-[#FEF3C7]/30 transition-transform group-hover:scale-105">
-              <span className="font-extrabold text-sm tracking-wider">99</span>
-            </div>
             <div>
-              <div className="flex items-center gap-1.5">
-                <span className="text-xl sm:text-2xl font-black tracking-tight text-white uppercase font-sans">
-                  Dosa Xpress
-                </span>
-                <LeafIcon className="w-4 h-4 text-[#D97706] hidden sm:inline" />
-              </div>
-              <p className="text-[11px] text-[#FEF3C7]/80 font-medium tracking-wide">
-                Authentic Taste of South India • Kolkata
-              </p>
+              <Image
+                src="/images/logo.png"
+                alt="Dosa Xpress Logo"
+                width={60}
+                height={40}
+                className="h-auto w-auto max-w-[60px] sm:max-w-[60px] object-contain "
+                priority
+              />
             </div>
           </Link>
 
@@ -62,8 +60,8 @@ export default function Navbar() {
                   href={link.href}
                   className={`px-3.5 py-2 rounded-lg text-sm font-medium transition-colors ${
                     isActive
-                      ? 'text-[#F59E0B] bg-white/10'
-                      : 'text-white/90 hover:text-[#F59E0B] hover:bg-white/5'
+                      ? "text-[#F59E0B] bg-white/10"
+                      : "text-white/90 hover:text-[#F59E0B] hover:bg-white/5"
                   }`}
                 >
                   {link.name}
@@ -99,7 +97,11 @@ export default function Navbar() {
               aria-label="Toggle navigation menu"
               className="p-2 rounded-lg text-white/90 hover:text-white hover:bg-white/10 transition-colors focus:outline-none"
             >
-              {isOpen ? <CloseIcon className="w-6 h-6" /> : <MenuIcon className="w-6 h-6" />}
+              {isOpen ? (
+                <CloseIcon className="w-6 h-6" />
+              ) : (
+                <MenuIcon className="w-6 h-6" />
+              )}
             </button>
           </div>
         </div>
@@ -117,8 +119,8 @@ export default function Navbar() {
                 onClick={() => setIsOpen(false)}
                 className={`block px-4 py-2.5 rounded-lg text-base font-medium transition-colors ${
                   isActive
-                    ? 'text-[#F59E0B] bg-white/10 font-semibold'
-                    : 'text-white/90 hover:text-white hover:bg-white/5'
+                    ? "text-[#F59E0B] bg-white/10 font-semibold"
+                    : "text-white/90 hover:text-white hover:bg-white/5"
                 }`}
               >
                 {link.name}
