@@ -135,9 +135,9 @@ export default function LocationSection() {
           <div className="lg:col-span-7 bg-[#FAF6ED] rounded-3xl p-3 sm:p-4 border border-[#E8E2D8] shadow-sm flex flex-col">
             <div className="relative w-full h-[380px] sm:h-[450px] lg:h-full min-h-[380px] rounded-2xl overflow-hidden border border-[#E0D8CA] bg-[#E8E2D8]">
               {/* Lightweight Interactive Google Maps Embed (No API Key Required) */}
-              <iframe
+             <iframe
                 title="99 Dosa Xpress Sarsuna Kolkata Google Map"
-                src="https://maps.google.com/maps?q=99+Dosa+Xpress,+Sarsuna+Main+Road,+Near+Sarsuna+7A+Bus+Stand,+Kolkata+700061&t=&z=16&ie=UTF8&iwloc=&output=embed"
+                src="https://www.google.com/maps?q=22.4798633,88.2952369&z=17&output=embed"
                 width="100%"
                 height="100%"
                 style={{ border: 0 }}
@@ -145,7 +145,6 @@ export default function LocationSection() {
                 referrerPolicy="no-referrer-when-downgrade"
                 className="w-full h-full object-cover"
               />
-
               {/* Floating Overlay Badge on Map */}
               <div className="absolute top-4 left-4 bg-white/95 backdrop-blur-md p-3 rounded-xl shadow-lg border border-[#D97706]/30 max-w-xs pointer-events-auto">
                 <div className="flex items-center gap-2 mb-1">
