@@ -135,16 +135,17 @@ export default function LocationSection() {
           <div className="lg:col-span-7 bg-[#FAF6ED] rounded-3xl p-3 sm:p-4 border border-[#E8E2D8] shadow-sm flex flex-col">
             <div className="relative w-full h-[380px] sm:h-[450px] lg:h-full min-h-[380px] rounded-2xl overflow-hidden border border-[#E0D8CA] bg-[#E8E2D8]">
               {/* Lightweight Interactive Google Maps Embed (No API Key Required) */}
-             <iframe
-                title="99 Dosa Xpress Sarsuna Kolkata Google Map"
-                src="https://www.google.com/maps?q=22.4798633,88.2952369&z=17&output=embed"
-                width="100%"
-                height="100%"
-                style={{ border: 0 }}
-                loading="lazy"
-                referrerPolicy="no-referrer-when-downgrade"
-                className="w-full h-full object-cover"
-              />
+    
+              <iframe
+  title="99 Dosa Xpress Sarsuna Kolkata Google Map"
+  src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3685.6!2d88.2952369!3d22.4798633!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x0!2zMjLCsDI4JzM5LjUiTiA4OMKwMTcnNDIuOSJF!5e0!3m2!1sen!2sin!4v1!5m2!1sen!2sin"
+  width="100%"
+  height="100%"
+  style={{ border: 0 }}
+  loading="lazy"
+  referrerPolicy="no-referrer-when-downgrade"
+  className="w-full h-full object-cover"
+/>
               {/* Floating Overlay Badge on Map */}
               <div className="absolute top-4 left-4 bg-white/95 backdrop-blur-md p-3 rounded-xl shadow-lg border border-[#D97706]/30 max-w-xs pointer-events-auto">
                 <div className="flex items-center gap-2 mb-1">
