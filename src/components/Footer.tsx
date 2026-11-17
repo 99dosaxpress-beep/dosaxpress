@@ -110,12 +110,12 @@ export default function Footer() {
               Serving patrons from Sarsuna, Behala, Shakuntala Park, and throughout Kolkata. Freshly prepared to order.
             </p>
             <div className="pt-1">
-              <a
-                href={restaurantInfo.mapsUrl}
-                target="_blank"
-                rel="noopener noreferrer"
-                className="inline-flex items-center gap-1.5 px-4 py-2.5 rounded-lg text-xs font-bold text-white bg-white/10 hover:bg-[#0D3823] border border-white/15 transition-all w-full justify-center"
-              >
+             <a
+  href="https://www.google.com/maps/search/?api=1&query=22.4798633%2C88.2952369"
+  target="_blank"
+  rel="noopener noreferrer"
+  className="inline-flex items-center gap-1.5 px-4 py-2.5 rounded-lg text-xs font-bold text-white bg-white/10 hover:bg-[#0D3823] border border-white/15 transition-all w-full justify-center"
+>
                 <span>Find on Google Maps</span>
                 <ExternalLinkIcon className="w-3.5 h-3.5 text-[#F59E0B]" />
               </a>
