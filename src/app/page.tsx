@@ -4,6 +4,7 @@ import Highlights from '@/components/Highlights';
 import PopularDishes from '@/components/PopularDishes';
 import MenuSection from '@/components/MenuSection';
 import AboutSection from '@/components/AboutSection';
+import GallerySection from '@/components/GallerySection';
 import WhyChooseUs from '@/components/WhyChooseUs';
 import LocationSection from '@/components/LocationSection';
 import CtaSection from '@/components/CtaSection';
@@ -26,13 +27,16 @@ export default function HomePage() {
       {/* 5. About Restaurant (Sarsuna & Kolkata Story) */}
       <AboutSection />
 
-      {/* 6. Why Choose Us (4 Pillars of Quality) */}
+      {/* 6. Customer Gallery */}
+      <GallerySection />
+
+      {/* 7. Why Choose Us (4 Pillars of Quality) */}
       <WhyChooseUs />
 
-      {/* 7. Location & Clickable Contact */}
+      {/* 8. Location & Clickable Contact */}
       <LocationSection />
 
-      {/* 8. Call to Action Banner */}
+      {/* 9. Call to Action Banner */}
       <CtaSection />
     </>
   );

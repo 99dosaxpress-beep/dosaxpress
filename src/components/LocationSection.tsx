@@ -1,4 +1,5 @@
 ﻿import React from 'react';
+import Image from 'next/image';
 import { MapPinIcon, PhoneIcon, ClockIcon, ExternalLinkIcon } from './icons';
 import { restaurantInfo } from '@/data/restaurantInfo';
 
@@ -169,6 +170,17 @@ export default function LocationSection() {
           </div>
 
         </div>
+
+        <figure className="mt-10 mx-auto max-w-md overflow-hidden rounded-2xl border border-[#E8E2D8] bg-[#FAF6ED] p-2 shadow-sm">
+          <Image
+            src="/images/WhatsApp Image 2026-11-17 at 10.18.56 PM.jpeg"
+            alt="99 Dosa Xpress store opening flyer with the landmark opposite Sarsuna High School, Kolkata 700061, and contact number 9732990100"
+            width={1254}
+            height={1254}
+            sizes="(max-width: 768px) 100vw, 448px"
+            className="w-full h-auto rounded-lg object-cover"
+          />
+        </figure>
       </div>
     </section>
   );

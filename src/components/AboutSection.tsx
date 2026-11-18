@@ -14,13 +14,14 @@ export default function AboutSection() {
             <div className="relative mx-auto max-w-md lg:max-w-none">
               
               {/* Primary Image */}
-              <div className="relative aspect-[4/3] rounded-3xl overflow-hidden shadow-2xl border-4 border-[#FAF6ED]">
+              <div className="relative rounded-3xl overflow-hidden shadow-2xl border-4 border-[#FAF6ED]">
                 <Image
-                  src="/images/idli.jpg"
-                  alt="Traditional South Indian breakfast at 99 Dosa Xpress Sarsuna Kolkata"
-                  fill
+                  src="/images/WhatsApp Image 2026-11-17 at 10.18.57 PM.jpeg"
+                  alt="99 Dosa Xpress street-side storefront with staff preparing dosa live on the tawa in Sarsuna, Kolkata"
+                  width={1600}
+                  height={1200}
                   sizes="(max-width: 768px) 100vw, 500px"
-                  className="object-cover object-center"
+                  className="w-full h-auto rounded-lg object-cover"
                 />
               </div>
 

@@ -76,46 +76,29 @@ export default function Hero() {
             </div>
           </div>
 
-          {/* Right Column: Hero Visual Food Showcase */}
+          {/* Right Column: Featured Masala Dosa Promotion */}
           <div className="lg:col-span-5 relative">
             <div className="relative mx-auto max-w-md lg:max-w-none">
-              
-              {/* Decorative Frame */}
               <div className="relative rounded-3xl p-2 bg-gradient-to-br from-[#D97706]/40 via-[#FEF3C7]/20 to-[#0D3823]/60 shadow-2xl backdrop-blur-sm ring-1 ring-white/20">
-                <div className="relative aspect-[4/3] w-full rounded-2xl overflow-hidden bg-[#0A2617]">
-                  <Image
-                    src="/images/hero-dosa.jpg"
-                    alt="Authentic Mysore Masala Dosa served on banana leaf with sambar and chutneys at 99 Dosa Xpress Kolkata"
-                    fill
-                    sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 600px"
-                    priority
-                    className="object-cover object-center transform hover:scale-105 transition-transform duration-700"
-                  />
-                  {/* Overlay Gradient */}
-                  <div className="absolute inset-0 bg-gradient-to-t from-black/60 via-transparent to-transparent" />
-                  
-                  {/* Floating Price / Tag on Image */}
-                  <div className="absolute bottom-3 left-3 right-3 flex items-center justify-between text-xs sm:text-sm bg-black/60 backdrop-blur-md px-3.5 py-2 rounded-xl text-white border border-white/20">
-                    <span className="font-semibold text-[#FEF3C7]">Special Masala Dosa Platter</span>
-                    <span className="font-bold text-[#F59E0B] text-base">Starting ₹60</span>
-                  </div>
-                </div>
+                <Image
+                  src="/images/WhatsApp Image 2026-11-17 at 10.18.55 PM (1).jpeg"
+                  alt="99 Dosa Xpress Masala Dosa promotion with freshly prepared food, quality highlights, and Kolkata address"
+                  width={1254}
+                  height={1254}
+                  sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 600px"
+                  priority
+                  className="w-full h-auto rounded-lg object-cover"
+                />
               </div>
 
-              {/* Floating Mini Highlight Badge */}
-              <div className="absolute -bottom-5 -left-4 sm:-left-6 bg-white text-[#1F2937] p-3 sm:p-4 rounded-2xl shadow-2xl border border-[#E5E7EB] flex items-center gap-3 animate-bounce-subtle">
-                <div className="w-10 h-10 rounded-xl bg-[#FEF3C7] text-[#D97706] flex items-center justify-center font-black text-lg shadow-inner">
+              <div className="mt-4 flex items-center gap-3 rounded-2xl border border-white/15 bg-white/10 p-3 text-left backdrop-blur-sm">
+                <div className="flex h-10 w-10 shrink-0 items-center justify-center rounded-xl bg-[#FEF3C7] text-lg font-black text-[#D97706]">
                   42+
                 </div>
-                <div className="text-left">
-                  <p className="text-xs font-bold text-gray-900 leading-tight">Fresh South Indian Dishes</p>
-                  <p className="text-[11px] text-gray-500">Dosa • Idli • Vada • Uttapam</p>
+                <div>
+                  <p className="text-sm font-bold text-white">Fresh South Indian Dishes</p>
+                  <p className="text-xs text-[#FEF3C7]/80">Dosa • Idli • Vada • Uttapam</p>
                 </div>
-              </div>
-
-              {/* Verified Quality Badge */}
-              <div className="absolute -top-4 -right-3 sm:-right-4 bg-[#EA580C] text-white px-3.5 py-1.5 rounded-full text-xs font-bold shadow-lg tracking-wide flex items-center gap-1.5">
-                <span>★ Made Fresh To Order</span>
               </div>
 
             </div>
